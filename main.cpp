@@ -9,7 +9,7 @@ Task myTasks[4];
 
 createList(){
   for (int i = 0; i <= 3; i++){
-    Task task(list[i], false);
+    Task task(i, list[i], false);
     myTasks[i] = task;
   }
 }
@@ -19,7 +19,7 @@ int main(void){
 
   cout << "ToDo List : " << endl;
 
-  for(auto t : myTasks){
+  for(Task t : myTasks){
     cout << t->content << " | Status : " << if (t->done){"V"} else {"X"} << endl;
   };
 

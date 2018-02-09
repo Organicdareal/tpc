@@ -5,8 +5,10 @@
 
 class Task{
   public:
-    Task(std::string content, bool done);
+    Task();
+    Task(int id, std::string content, bool done);
   private:
+    int id;
     std::string content;
     bool done;
 };

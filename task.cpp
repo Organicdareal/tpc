@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Task::Task(std::string content, bool done)
-: content(content), done(done){
+Task::Task(int id, std::string content, bool done) : content(content), done(done)
+{
 
 }
