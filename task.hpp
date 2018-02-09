@@ -6,9 +6,10 @@
 class Task{
   public:
     Task();
-    Task(int id, std::string content, bool done);
+    Task(std::string content, bool done);
+    std::string getContent();
+    bool isDone();
   private:
-    int id;
     std::string content;
     bool done;
 };
